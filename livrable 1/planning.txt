@@ -1,0 +1,7 @@
+24/05
+Ni : modèle MVC, BD
+No : diagramme classes, MLD
+
+25/05
+Ni : bataille sensationnelle avec VLC
+No : diagramme classes, MLD, diagramme cas d'utilisation
