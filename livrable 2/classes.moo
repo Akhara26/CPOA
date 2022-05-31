@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{7E6414FC-C7A4-49F7-8931-8F22A5F709BF}" Label="" LastModificationDate="1653491062" Name="Diagramme de classes UML_1" Objects="141" Symbols="13" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="16.7.1.6488"?>
+<?PowerDesigner AppLocale="UTF16" ID="{7E6414FC-C7A4-49F7-8931-8F22A5F709BF}" Label="" LastModificationDate="1653990160" Name="Diagramme de classes UML_1" Objects="140" Symbols="19" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="16.7.1.6488"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -980,7 +980,7 @@ IndxFKName=%REFR%_FK
 IndxThreshold=
 ColnFKName=%.3:PARENT%_%COLUMN%
 ColnFKNameUse=No</a:ModelOptionsText>
-<a:RepositoryFilename>C:\Users\noemi\Desktop\CPOA\CPOA\livrable 2\classes.moo</a:RepositoryFilename>
+<a:RepositoryFilename>C:\Users\noemi\Desktop\CPOA\livrable 2\classes.moo</a:RepositoryFilename>
 <c:ObjectLanguage>
 <o:Shortcut Id="o3">
 <a:ObjectID>61BF0E30-362B-4771-A6E6-2938492976C5</a:ObjectID>
@@ -1554,7 +1554,7 @@ Shadow=0</a:DisplayPreferences>
 <o:AssociationSymbol Id="o5">
 <a:CreationDate>1653382050</a:CreationDate>
 <a:ModificationDate>1653490693</a:ModificationDate>
-<a:Rect>((-17847,-401), (-13767,5260))</a:Rect>
+<a:Rect>((-17757,-401), (-13857,5260))</a:Rect>
 <a:ListOfPoints>((-15867,4860),(-15867,-1))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>3336</a:ArrowStyle>
@@ -1576,7 +1576,7 @@ SOURCE 0 Arial,8,N</a:FontList>
 <a:CreationDate>1653382082</a:CreationDate>
 <a:ModificationDate>1653490680</a:ModificationDate>
 <a:SourceTextOffset>(1398, 586)</a:SourceTextOffset>
-<a:Rect>((929,-4062), (5357,1595))</a:Rect>
+<a:Rect>((1019,-4062), (5357,1595))</a:Rect>
 <a:ListOfPoints>((2909,1195),(2909,-3662))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -1618,7 +1618,7 @@ SOURCE 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o15">
 <a:CreationDate>1653459701</a:CreationDate>
 <a:ModificationDate>1653490693</a:ModificationDate>
-<a:Rect>((-31463,-401), (-18470,2934))</a:Rect>
+<a:Rect>((-31463,-401), (-18470,2879))</a:Rect>
 <a:ListOfPoints>((-31063,1977),(-19170,1977),(-19170,-1))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>3336</a:ArrowStyle>
@@ -1639,8 +1639,8 @@ SOURCE 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o18">
 <a:CreationDate>1653460873</a:CreationDate>
 <a:ModificationDate>1653490689</a:ModificationDate>
-<a:Rect>((-37128,3946), (-2668,12449))</a:Rect>
-<a:ListOfPoints>((-3068,11699),(-35028,11699),(-35028,4346))</a:ListOfPoints>
+<a:Rect>((-37128,4426), (-2668,12449))</a:Rect>
+<a:ListOfPoints>((-3068,11699),(-35028,11699),(-35028,4826))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>3592</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -1661,7 +1661,7 @@ SOURCE 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o20">
 <a:CreationDate>1653489688</a:CreationDate>
 <a:ModificationDate>1653490693</a:ModificationDate>
-<a:Rect>((-31587,-7695), (-22673,-2930))</a:Rect>
+<a:Rect>((-31497,-7695), (-22673,-2930))</a:Rect>
 <a:ListOfPoints>((-23073,-3330),(-29487,-3330),(-29487,-7295))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -1798,7 +1798,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1653459223</a:CreationDate>
 <a:ModificationDate>1653490689</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-38993,-392), (-31063,4346))</a:Rect>
+<a:Rect>((-38993,-872), (-31063,4826))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1853,7 +1853,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>produit</a:Code>
 <a:CreationDate>1653380232</a:CreationDate>
 <a:Creator>noemi</a:Creator>
-<a:ModificationDate>1653489734</a:ModificationDate>
+<a:ModificationDate>1653990160</a:ModificationDate>
 <a:Modifier>noemi</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
@@ -2293,7 +2293,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>panier</a:Code>
 <a:CreationDate>1653459223</a:CreationDate>
 <a:Creator>noemi</a:Creator>
-<a:ModificationDate>1653460918</a:ModificationDate>
+<a:ModificationDate>1653989073</a:ModificationDate>
 <a:Modifier>noemi</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
@@ -2308,9 +2308,20 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
+<o:Attribute Id="o67">
+<a:ObjectID>F4CF4228-2690-4CCF-AA54-C77F32CA937F</a:ObjectID>
+<a:Name>totalPan</a:Name>
+<a:Code>totalPan</a:Code>
+<a:CreationDate>1653989060</a:CreationDate>
+<a:Creator>noemi</a:Creator>
+<a:ModificationDate>1653989073</a:ModificationDate>
+<a:Modifier>noemi</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o67">
+<o:Operation Id="o68">
 <a:ObjectID>69910D2B-311D-41AA-AE80-C214464A5271</a:ObjectID>
 <a:Name>ajouterPan</a:Name>
 <a:Code>ajouterPan</a:Code>
@@ -2320,7 +2331,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>noemi</a:Modifier>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o68">
+<o:Operation Id="o69">
 <a:ObjectID>9E9F02FD-E534-40ED-A237-EBF9A61C6555</a:ObjectID>
 <a:Name>supprimerPan</a:Name>
 <a:Code>supprimerPan</a:Code>
@@ -2338,11 +2349,11 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>promotion</a:Code>
 <a:CreationDate>1653461057</a:CreationDate>
 <a:Creator>noemi</a:Creator>
-<a:ModificationDate>1653489734</a:ModificationDate>
+<a:ModificationDate>1653990160</a:ModificationDate>
 <a:Modifier>noemi</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o69">
+<o:Attribute Id="o70">
 <a:ObjectID>48BE0390-A472-4579-B6C1-940330A00FA4</a:ObjectID>
 <a:Name>idPromo</a:Name>
 <a:Code>idPromo</a:Code>
@@ -2353,7 +2364,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o70">
+<o:Attribute Id="o71">
 <a:ObjectID>51EADF8E-67D2-4B96-B74A-26918C99FDFF</a:ObjectID>
 <a:Name>debutPromo</a:Name>
 <a:Code>debutPromo</a:Code>
@@ -2364,7 +2375,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o71">
+<o:Attribute Id="o72">
 <a:ObjectID>687365F0-5023-4E30-8CC6-E729C162F27D</a:ObjectID>
 <a:Name>finPromo</a:Name>
 <a:Code>finPromo</a:Code>
@@ -2375,7 +2386,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o72">
+<o:Attribute Id="o73">
 <a:ObjectID>D800C07B-7263-4688-8460-9B80F5EB5CEF</a:ObjectID>
 <a:Name>montantPromo</a:Name>
 <a:Code>montantPromo</a:Code>
@@ -2484,7 +2495,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Association_6</a:Code>
 <a:CreationDate>1653489688</a:CreationDate>
 <a:Creator>noemi</a:Creator>
-<a:ModificationDate>1653489734</a:ModificationDate>
+<a:ModificationDate>1653990160</a:ModificationDate>
 <a:Modifier>noemi</a:Modifier>
 <a:RoleAMultiplicity>0..*</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>0..1</a:RoleBMultiplicity>
@@ -2497,7 +2508,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Association>
 </c:Associations>
 <c:TargetModels>
-<o:TargetModel Id="o73">
+<o:TargetModel Id="o74">
 <a:ObjectID>436F173D-1E1A-44CF-AA87-13A7828BFD85</a:ObjectID>
 <a:Name>Analyse</a:Name>
 <a:Code>Analysis</a:Code>
