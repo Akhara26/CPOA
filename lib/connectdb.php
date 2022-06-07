@@ -1,4 +1,3 @@
-
 <?php
     $bdd = oci_new_connect('p2003225','564077','(
         Description = (
