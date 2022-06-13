@@ -1,0 +1,10 @@
+.items {
+display : flex;
+flex-wrap: wrap;
+align-content: space-between;
+gap: 2vw;
+width: 96vw;
+margin-left:4vw ;
+margin-top: 5vh;
+}
+
