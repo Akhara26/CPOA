@@ -8,4 +8,3 @@
              (Service_name = ORCL.UNIV-LYON1.FR)
         )
     )');
-?>

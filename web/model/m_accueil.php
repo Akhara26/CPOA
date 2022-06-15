@@ -13,4 +13,3 @@ $query2 = oci_parse($bdd, 'Select * from CPOA_CATEGORIE');
 oci_execute($query2);
 $nrows = oci_fetch_all($query2, $data2);
 oci_close($bdd);
-?>

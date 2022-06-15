@@ -86,10 +86,3 @@ if (isset($_POST["connexionFormSubmit"])){
 
     }
 }
-
-
-
-
-
-
-?>
