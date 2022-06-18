@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="style/accueil.css">
+  <link rel="stylesheet" href="style/s_produit.css">
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -29,5 +29,8 @@
       echo $array["DESCRIPTION"][0];
       ?>
     </section>
+    <a href=<?= "index.php?&prodpanier=" . $array["ID_PRODUIT"][0] ?> class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ajouter au panier</a>
+
+
   </div>
 </body>
