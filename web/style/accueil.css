@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+}
+
 .items {
     display: flex;
     flex-wrap: wrap;
@@ -6,4 +12,19 @@
     width: 96vw;
     margin-left: 4vw;
     margin-top: 5vh;
+}
+
+.infocard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.restant {
+    margin-top: 7px;
+}
+
+.titrecat {
+    margin-top: 30px;
+    margin-left: 50px;
 }

@@ -6,4 +6,5 @@ include("model/m_profil.php");
 include("model/m_panier.php");
 
 
+
 require_once("view/v_accueil.php");

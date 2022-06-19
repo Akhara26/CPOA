@@ -20,50 +20,70 @@
   foreach ($data2["ID_CAT"] as $cat) {
     $v_array = produit($bdd, $cat);
     $data0 = $v_array[0];
+
   ?>
 
-    <div class="items">
+
+    <div class="catitem">
       <?php
-      for ($i = 0; $i < $v_array[1]; $i++) {
+      $a = gettitle($bdd, $cat[0]);
+      echo "<h1 class='titrecat'>" . $a["NOM_CAT"][0] . "</h1>";
       ?>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">
-              <?php
-              foreach ($data0 as $key => $row) {
-                if ($key == "LIBELLE_PRODUIT") {
-                  echo $row[$i];
+      <div class="items">
+        <?php
+        for ($i = 0; $i < $v_array[1]; $i++) {
+        ?>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                <?php
+                foreach ($data0 as $key => $row) {
+                  if ($key == "LIBELLE_PRODUIT") {
+                    echo $row[$i];
+                  }
                 }
-              }
-              ?>
-            </h5>
-            <p class="card-text">
-              <?php
-              foreach ($data0 as $key => $row) {
-                if ($key == "DESCRIPTION") {
-                  echo $row[$i];
+                ?>
+              </h5>
+              <p class="card-text">
+                <?php
+                foreach ($data0 as $key => $row) {
+                  if ($key == "DESCRIPTION") {
+                    echo $row[$i];
+                  }
                 }
-              }
-              foreach ($data0 as $key => $row) {
-                if ($key == "ID_PRODUIT") {
-                  $id = $row[$i];
+                foreach ($data0 as $key => $row) {
+                  if ($key == "ID_PRODUIT") {
+                    $id = $row[$i];
+                  }
                 }
-              }
-              ?>
-            </p>
-            <form action=<?= "index.php?target=produit&id_produit=" . $id ?> method="post">
-              <input type="submit" class="btn btn-primary" value="Precisions" name="buttonPrecision">
-            </form>
+                ?>
+              </p>
+              <section class="infocard">
+                <form action=<?= "index.php?target=produit&id_produit=" . $id ?> method="post">
+                  <input type="submit" class="btn btn-primary" value="En savoir plus" name="buttonPrecision">
+                </form>
+                <div class="restant">
+                  <?php
+                  foreach ($data0 as $key => $row) {
+                    if ($key == "STOCK_PRO") {
+                      echo "<div>" . $row[$i] . " restants !</div>";
+                    }
+                  }
+                  ?>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
-      <?php
-        echo "<br>";
-      }
-      ?>
+        <?php
+          echo "<br>";
+        }
+        ?>
+      </div>
     </div>
   <?php
   }
+
   ?>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

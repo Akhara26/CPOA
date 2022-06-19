@@ -18,7 +18,7 @@
   <div class="produit">
     <h1>
       <?php
-      $array = getproduit($bdd, $_GET["id_produit"]);
+      $array = getproduit($bdd, $idproduit);
       echo $array["LIBELLE_PRODUIT"][0];
 
       ?>
@@ -32,10 +32,11 @@
 
     <?php
     if (isset($_SESSION["user"])) {
-      echo "<a href='index.php?&prodpanier='" . $array["ID_PRODUIT"][0] . ' class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >Ajouter au panier</a>';
+      echo "<a href='index.php?&prodpanier=" . $array["ID_PRODUIT"][0] . "'" . ' class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >Ajouter au panier</a>';
     } else {
       echo '<button type="button" class="btn btn-lg btn-primary" disabled title="Veuillez vous connecter pour ajouter au panier">Ajouter au panier</button>';
     }
+    echo $array["ID_PRODUIT"][0];
     ?>
 
 
