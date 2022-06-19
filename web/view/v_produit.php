@@ -29,7 +29,15 @@
       echo $array["DESCRIPTION"][0];
       ?>
     </section>
-    <a href=<?= "index.php?&prodpanier=" . $array["ID_PRODUIT"][0] ?> class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ajouter au panier</a>
+
+    <?php
+    if (isset($_SESSION["user"])) {
+      echo "<a href='index.php?&prodpanier='" . $array["ID_PRODUIT"][0] . ' class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >Ajouter au panier</a>';
+    } else {
+      echo '<button type="button" class="btn btn-lg btn-primary" disabled title="Veuillez vous connecter pour ajouter au panier">Ajouter au panier</button>';
+    }
+    ?>
+
 
 
   </div>
