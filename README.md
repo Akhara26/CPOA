@@ -1,3 +1,3 @@
-Pour l'application java
-id admin = 1
-mdp admin = admin
+Pour l'application java :
+id = admin@a.fr
+mdp = admin
