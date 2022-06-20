@@ -1,0 +1,8 @@
+produit (**idPro**, prixPro, descriPro, notePro, #idCat)
+client (**idCli**, nomCli, prenomCli, emailCli, mdpCli, adresseCli, cpCli, villeCli)
+admin (**idAd**, nomAd, prenomAd, emailAd, mdpAd)
+commande (**idCo**, montantCo, dateCo, etatCo, adresseCo, cpCo, villeCo, #idCli)
+categorie (**idCat**, nomCat)
+Panier(**idCli, idPro**, quantitePan)
+
+etreDansCommande (**idCo, idPro**)

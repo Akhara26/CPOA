@@ -9,3 +9,19 @@ No : diagramme classes, MLD, diagramme cas d'utilisation
 31/05
 Ni : 
 No : 
+
+01/06
+BD (triggers)
+diagrammes activité
+
+07/06
+BD (triggers)
+on a méthode agile trunck (?)
+connection BD
+
+13/06
+Ni : web
+No : App
+
+564077
+p2003225
