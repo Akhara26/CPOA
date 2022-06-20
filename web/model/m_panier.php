@@ -46,6 +46,18 @@ function getadd($bdd)
 
 function createcommande($bdd, $prix, $addresse)
 {
-    $query = oci_parse($bdd, "Insert into CPOA_COMMANDE (MONTANT_COMMANDE, DATE_COMMANDE, ETAT_COMMANDE, ADRESSE_COMMANDE, ID_CLIENT) values('" . $prix . "',sysdate, 0, '" . $addresse . "'," . $_SESSION["user"] . ")");
+    $query = oci_parse($bdd, "Insert into CPOA_COMMANDE (MONTANT_COMMANDE, DATE_COMMANDE, ETAT_COMMANDE, ADRESSE_COMMANDE, ID_CLIENT) values('" . $prix . "',sysdate, 'en attente de paiement', '" . $addresse . "'," . $_SESSION["user"] . ")");
     oci_execute($query);
+}
+
+function verifystock($bdd, $idprod)
+{
+    $query = oci_parse($bdd, "Select STOCK_PRO FROM CPOA_PRODUIT where ID_PRODUIT=" . $idprod);
+    oci_execute($query);
+    oci_fetch_all($query, $data);
+    if ($data["STOCK_PRO"][0] > 0) {
+        return (true);
+    } else {
+        return (false);
+    }
 }

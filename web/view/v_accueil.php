@@ -35,7 +35,14 @@
         for ($i = 0; $i < $v_array[1]; $i++) {
         ?>
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <?php
+            foreach ($data0 as $key => $row) {
+              if ($key == "URL_IMAGE") {
+                echo '<img src="' . $row[$i] . '" class="card-img-top" alt="...">';
+              }
+            }
+            ?>
+
             <div class="card-body">
               <h5 class="card-title">
                 <?php
@@ -49,11 +56,6 @@
               <p class="card-text">
                 <?php
                 foreach ($data0 as $key => $row) {
-                  if ($key == "DESCRIPTION") {
-                    echo $row[$i];
-                  }
-                }
-                foreach ($data0 as $key => $row) {
                   if ($key == "ID_PRODUIT") {
                     $id = $row[$i];
                   }
@@ -62,7 +64,17 @@
               </p>
               <section class="infocard">
                 <form action=<?= "index.php?target=produit&id_produit=" . $id ?> method="post">
-                  <input type="submit" class="btn btn-primary" value="En savoir plus" name="buttonPrecision">
+                  <?php
+                  foreach ($data0 as $key => $row) {
+                    if ($key == "STOCK_PRO") {
+                      if ($row[$i] == 0) {
+                        echo  '<input type="submit" class="btn btn-primary" value="Indisponible" name="buttonPrecision" disabled>';
+                      } else {
+                        echo   '<input type="submit" class="btn btn-primary" value="En savoir plus" name="buttonPrecision">';
+                      }
+                    }
+                  }
+                  ?>
                 </form>
                 <div class="restant">
                   <?php

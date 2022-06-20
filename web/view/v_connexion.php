@@ -30,7 +30,7 @@
             </form>
 
 
-            <form class="form" method="post">
+            <form class="form" method="post" action="">
                 <h2>Déjà inscrit ?</h2>
 
                 <p type="Name:"><input type="text" name="nom_user" placeholder="Email"></input></p>
@@ -51,11 +51,16 @@
             echo "<p style=\"color:red; font-size:20px; text-align:center;\">Nom d'utilisateur ou mot de passe incorect</p>";
         }
         if (isset($newUserCreated)) {
-            echo "<p id=messagesign style=\"color:green; font-size:20px; text-align:center;\">Nouvel utilisateur crée avec succès</p>";
+            echo "<p id=messagesign style=\"color:green; font-size:20px; text-align:center;\">Nouvel utilisateur créé avec succès</p>";
         }
         if (isset($newUserNotCreated)) {
             echo "<p id=messagesign style=\"color:red; font-size:20px; text-align:center;\">Veuillez renseigner tous les champs</p>";
         }
+        if (isset($usernotexist)) {
+            echo "<p id=messagesign style=\"color:red; font-size:20px; text-align:center;\">L'utilisateur n'existe pas</p>";
+        }
+
+
 
         ?>
 

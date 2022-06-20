@@ -7,6 +7,7 @@ body {
 
 h1 {
     color: darkred;
+    text-align: center;
 }
 
 .navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -28,4 +29,17 @@ h1 {
 
 #seachsubmit:hover {
     background-color: rgba(152, 251, 152, 0.478);
+}
+
+.showtable {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.card-img-top {
+    width: 250px !important;
+    height: 300px !important;
+    margin-left: 20px !important;
 }

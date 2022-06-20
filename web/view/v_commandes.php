@@ -17,47 +17,54 @@
         require_once("view/v_header.php")
         ?>
     </header>
+    <h1>Commandes</h1>
     <?php
     $commande = showcommande($bdd);
     ?>
+    <div class="showtable">
 
-    <table>
-        <tr>
-            <td>ID</td>
-            <td>Montant</td>
-            <td>Date de commande</td>
-            <td>Etat</td>
-            <td>Adresse de livraison </td>
-        </tr>
-        <?php
-        for ($i = 0; $i < $commande[0]; $i++) {
-            foreach ($commande[1] as $key => $row) {
-                if ($key == "ID_COMMANDE") {
-                    echo "<tr><td>" . $row[$i] . "</td>";
-                }
-            }
-            foreach ($commande[1] as $key => $row) {
-                if ($key == "MONTANT_COMMANDE") {
-                    echo "<td>" . $row[$i] . "</td>";
-                }
-            }
-            foreach ($commande[1] as $key => $row) {
-                if ($key == "DATE_COMMANDE") {
-                    echo "<td>" . $row[$i] . "</td>";
-                }
-            }
-            foreach ($commande[1] as $key => $row) {
-                if ($key == "ETAT_COMMANDE") {
-                    echo "<td>" . $row[$i] . "</td>";
-                }
-            }
-            foreach ($commande[1] as $key => $row) {
-                if ($key == "ADRESSE_COMMANDE") {
-                    echo "<td>" . $row[$i] . "</td></tr>";
-                }
-            }
-        }
-        ?>
-    </table>
 
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>Montant</td>
+                <td>Date de commande</td>
+                <td>Etat</td>
+                <td>Adresse de livraison </td>
+            </tr>
+            <?php
+            for ($i = 0; $i < $commande[0]; $i++) {
+                foreach ($commande[1] as $key => $row) {
+                    if ($key == "ID_COMMANDE") {
+                        echo "<tr><td>" . $row[$i] . "</td>";
+                    }
+                }
+                foreach ($commande[1] as $key => $row) {
+                    if ($key == "MONTANT_COMMANDE") {
+                        echo "<td>" . $row[$i] . "</td>";
+                    }
+                }
+                foreach ($commande[1] as $key => $row) {
+                    if ($key == "DATE_COMMANDE") {
+                        echo "<td>" . $row[$i] . "</td>";
+                    }
+                }
+                foreach ($commande[1] as $key => $row) {
+                    if ($key == "ETAT_COMMANDE") {
+                        if ($row[$i] == "en attente de paiement") {
+                            echo "<td><a href=index.php?target=paiement&pay=" . $commande[1]["ID_COMMANDE"][$i] . ">" . $row[$i] . "</a></td>";
+                        } else {
+                            echo "<td>" . $row[$i] . "</td>";
+                        }
+                    }
+                }
+                foreach ($commande[1] as $key => $row) {
+                    if ($key == "ADRESSE_COMMANDE") {
+                        echo "<td>" . $row[$i] . "</td></tr>";
+                    }
+                }
+            }
+            ?>
+        </table>
+    </div>
 </body>

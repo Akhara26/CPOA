@@ -3,3 +3,29 @@
 body {
     font-family: 'Nunito', sans-serif !important;
 }
+
+.description {
+    width: 500px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.desprod {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexutility {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    margin-top: 150px !important;
+}
+
+.showtable {
+    margin-bottom: 20px;
+}

@@ -25,23 +25,27 @@
 
       ?>
     </h1>
-    <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png">
-    <section class="description">
-      <?php
-      echo $array["DESCRIPTION"][0];
-      echo $array["PRIX"][0];
+    <div class=flexutility>
+      <div class="desprod">
+        <img src=<?php echo "'" . $array["URL_IMAGE"][0] . "' class='card-img-top'" ?>>
+        <section class="description">
+          <?php
+          echo "<div class='ecritures'>" . $array["DESCRIPTION"][0] . "</div>";
+          echo "<div> prix: " . $array["PRIX"][0] . "</div>";
 
-      ?>
-    </section>
+          ?>
 
-    <?php
-    if (isset($_SESSION["user"])) {
-      echo "<a href='index.php?&prodpanier=" . $array["ID_PRODUIT"][0] . "'" . ' class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >Ajouter au panier</a>';
-    } else {
-      echo '<button type="button" class="btn btn-lg btn-primary" disabled title="Veuillez vous connecter pour ajouter au panier">Ajouter au panier</button>';
-    }
-    ?>
 
+          <?php
+          if (isset($_SESSION["user"])) {
+            echo "<a href='index.php?&prodpanier=" . $array["ID_PRODUIT"][0] . "'" . ' class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >Ajouter au panier</a>';
+          } else {
+            echo '<button type="button" class="btn btn-lg btn-primary" disabled title="Veuillez vous connecter pour ajouter au panier">Ajouter au panier</button>';
+          }
+          ?>
+        </section>
+      </div>
+    </div>
 
 
   </div>

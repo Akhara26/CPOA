@@ -15,3 +15,18 @@ td {
     width: 200px;
     text-align: center;
 }
+
+.boutons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.showtable {
+    margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+    margin-right: 40px;
+    margin-left: 40px;
+}
