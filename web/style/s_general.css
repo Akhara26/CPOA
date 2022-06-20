@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif !important;
+    background-color: beige !important;
+}
+
+h1 {
+    color: darkred;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: rgba(130, 1, 1, 0.63) !important;
+}
+
+.nav-link {
+    color: beige !important;
+}
+
+.navbar-brand {
+    color: rgb(74, 0, 0) !important;
+}
+
+#seachsubmit {
+    color: beige !important;
+    border-color: beige !important;
+}
+
+#seachsubmit:hover {
+    background-color: rgba(152, 251, 152, 0.478);
+}

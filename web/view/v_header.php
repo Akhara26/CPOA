@@ -45,7 +45,7 @@
       ?>
 
     </ul>
-    <form class="form-inline my-2 my-lg-0" method="post" action="index.php?&target=produit&searchproduit=1">
+    <form class="form-inline my-2 my-lg-0" method="post" action="index.php?&target=produit&searchproduit">
       <input class=" form-control mr-sm-2" type="search" placeholder="Cherchez un produit !" aria-label="Search" id="searcharea" name="searcharea">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="seachsubmit" name="searchsubmit" value=1>Search</button>
     </form>

@@ -10,3 +10,8 @@ tr {
     border-width: 1px;
     border-collapse: collapse;
 }
+
+td {
+    width: 200px;
+    text-align: center;
+}
